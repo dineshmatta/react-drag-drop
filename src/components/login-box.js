@@ -7,7 +7,7 @@ class LoginBox extends React.Component {
        
        const options = {
           email: {
-            label: "Email ddress",
+            label: "Email address",
             placeholder: "Email"
           },
           password: {

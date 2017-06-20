@@ -1,6 +1,6 @@
-# Babel with Gulp
+# Babel with Gulp + reactjs with Drag and Drop functionality
 
-Starter code for transpiling ES2015 (including modules) with Babel, Gulp and Browserify.
+For Transpiling code in ES2015 used Babel, Gulp and Browserify and many more packages which will speed up the development time
 
 
 # Installing
@@ -15,4 +15,4 @@ Run `npm start` from the command line and you are good to go!
 
 The project is currently setup to transpile code under the _/src_ folder using the _/src/app.js_ file as an entry point.
 
-Our resulting code ends up in the `public` directory.
+Our resulting code ends up in the `public\js` directory.

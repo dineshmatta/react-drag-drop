@@ -1,15 +1,15 @@
 import React from 'react';
-import LoginBox from '../components/login-box';
+import Dashboard from '../components/dashboard'
 
-export default class LoginPage extends React.Component {
+export default class DashboardPage extends React.Component {
   render() {
     return (
       <div>
         <div className="cell">
           <article className="article">
-            <h1 className="article-title">Profile Listing App</h1>
+            <h1 className="article-title">Profile Dashboard > Drag profiles between List 1 and List 2</h1>
             <div className="article-body">
-              <LoginBox/>
+              <Dashboard />
             </div>
           </article>
         </div>

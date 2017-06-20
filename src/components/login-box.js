@@ -1,8 +1,11 @@
 import React from 'react';
+import { withRouter } from 'react-router';
 
-export default class LoginBox extends React.Component { 
+
+class LoginBox extends React.Component { 
      render() {
-       let options = {
+       
+       const options = {
           email: {
             label: "Email ddress",
             placeholder: "Email"
@@ -15,7 +18,7 @@ export default class LoginBox extends React.Component {
             text: "Submit"
           }
        };
-       options = Object.assign(options, this.props.options || {});
+
        return <div>
           <form className="form-signin">
             <div className="form-group">
@@ -31,9 +34,12 @@ export default class LoginBox extends React.Component {
         </div>
      }
 
-     _handleOnSubmit(e){
-       if(this._email.value === "test@gmail.com" && this._password.value === "test1234"){
-
-       }
+     _handleOnSubmit(){
+        if(this._email.value === "test@gmail.com" && this._password.value === "test1234"){
+           this.props.router.push('/dashboard');
+        }
      }
 }
+
+
+export default withRouter(LoginBox);
